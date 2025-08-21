@@ -21,6 +21,8 @@ A cross-platform time management system designed for **students and professional
 ```bash
 git clone https://github.com/your-org/brainwave.git
 cd brainwave
+./scripts/dev-setup.sh  # optional: installs local dotnet if missing
+export PATH="$HOME/dotnet:$PATH"
 dotnet restore
 dotnet build
 
@@ -61,4 +63,32 @@ BrainWave/
 ├── .gitignore
 ├── README.md
 └── BrainWave.sln
+## Running Locally
+
+Backend API:
+```bash
+export PATH="$HOME/dotnet:$PATH"  # if you used scripts/dev-setup.sh
+cd backend/BrainWave.Api
+dotnet restore
+dotnet run
+# API will start on http://localhost:5000 or random port; see console output
+```
+
+Key endpoints:
+- GET `api/health` – health check
+- GET/POST/PUT/DELETE `api/tasks`
+- GET/POST `api/users`
+- GET/POST/PUT/DELETE `api/reminders`
+
+Swagger UI is enabled in Development at `/swagger`.
+
+Frontend (MAUI):
+```bash
+# Requires .NET MAUI workloads on your machine; not installed in CI container by default.
+cd frontend/BrainWave.App
+dotnet restore
+# Example run (platform specific):
+# dotnet build -t:Run -f net8.0-android
+# dotnet build -t:Run -f net8.0-windows10.0.19041.0
+```
 

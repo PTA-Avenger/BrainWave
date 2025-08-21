@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Wzb40HTupvK6w163FUo08lSZu9ERCl+9hkIzKTej0QU=",
+  "Source": "BrainWave.Api",
+  "BasePath": "_content/BrainWave.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
