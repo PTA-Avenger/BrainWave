@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrainWave.APP.Views.AdminUsersPage"
+             Title="Admin • Users">
+    <Grid RowDefinitions="Auto,*,Auto" Padding="16" RowSpacing="10">
+        <!-- Filters -->
+        <HorizontalStackLayout>
+            <Entry WidthRequest="140" Placeholder="First" Text="{Binding FName}" />
+            <Entry WidthRequest="140" Placeholder="Last" Text="{Binding LName}" />
+            <Entry WidthRequest="200" Placeholder="Email" Text="{Binding Email}" />
+            <Entry WidthRequest="120" Placeholder="Role" Text="{Binding Role}" />
+            <Button Text="Search" Clicked="Search_Clicked" />
+        </HorizontalStackLayout>
+
+        <!-- List -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Execute">
+                                <SwipeItem Text="Delete" BackgroundColor="Red" Invoked="Delete_Invoked" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Grid Padding="10" ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding FullName}" FontAttributes="Bold" />
+                                <Label Text="{Binding Email}" />
+                                <Label Text="{Binding Role}" />
+                                <Label Text="{Binding TaskCount, StringFormat='Tasks: {0}'}" />
+                            </VerticalStackLayout>
+                            <Button Text="Edit" Grid.Column="1" CommandParameter="{Binding .}" Clicked="Edit_Clicked" />
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Editor -->
+        <VerticalStackLayout Grid.Row="2" Spacing="6">
+            <Label Text="Edit User" FontAttributes="Bold" />
+            <Entry Placeholder="First Name" Text="{Binding Editing.F_Name}" />
+            <Entry Placeholder="Last Name" Text="{Binding Editing.L_Name}" />
+            <Entry Placeholder="Email" Text="{Binding Editing.Email}" />
+            <Entry Placeholder="Role" Text="{Binding Editing.Role}" />
+            <Button Text="Save" Clicked="Save_Clicked" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

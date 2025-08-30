@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:BrainWave.APP.Views"
+       x:Class="BrainWave.APP.AppShell">
+    <TabBar>
+        <ShellContent Title="Dashboard" ContentTemplate="{DataTemplate views:DashboardPage}" Route="dashboard" />
+        <ShellContent Title="Tasks" ContentTemplate="{DataTemplate views:TasksPage}" Route="tasks" />
+        <ShellContent Title="Reminders" ContentTemplate="{DataTemplate views:RemindersPage}" Route="reminders" />
+        <ShellContent Title="Collab" ContentTemplate="{DataTemplate views:CollaborationPage}" Route="collab" />
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate views:ProfilePage}" Route="profile" />
+    </TabBar>
+    <ShellSection Title="Admin">
+        <ShellContent Title="Login" ContentTemplate="{DataTemplate views:AdminLoginPage}" Route="admin-login" />
+        <ShellContent Title="Users" ContentTemplate="{DataTemplate views:AdminUsersPage}" Route="admin-users" />
+        <ShellContent Title="Tasks" ContentTemplate="{DataTemplate views:AdminTasksPage}" Route="admin-tasks" />
+    </ShellSection>
+</Shell>

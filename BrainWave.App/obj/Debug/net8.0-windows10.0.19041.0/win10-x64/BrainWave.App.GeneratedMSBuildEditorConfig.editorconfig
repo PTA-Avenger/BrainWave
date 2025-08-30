@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BrainWave.APP
+build_property.ProjectDir = C:\BrainWave\BrainWave.App\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/BrainWave/BrainWave.App/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/BrainWave/BrainWave.App/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/BrainWave/BrainWave.App/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/BrainWave/BrainWave.App/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/BrainWave/BrainWave.App/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/BrainWave/BrainWave.App/Views/AdminDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.AdminDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AdminDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AdminDashboardPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/AdminLoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.AdminLoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AdminLoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AdminLoginPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/AdminTasksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.AdminTasksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AdminTasksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AdminTasksPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/AdminUsersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.AdminUsersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AdminUsersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AdminUsersPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/CollaborationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.CollaborationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CollaborationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CollaborationPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DashboardPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/ReminderPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.ReminderPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ReminderPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ReminderPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/RemindersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.RemindersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RemindersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RemindersPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/TaskListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.TaskListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TaskListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TaskListPage.xaml
+
+[C:/BrainWave/BrainWave.App/Views/TasksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BrainWave.APP.Views.TasksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TasksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TasksPage.xaml

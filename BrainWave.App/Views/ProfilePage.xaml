@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrainWave.APP.Views.ProfilePage"
+             Title="Profile">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="8">
+            <Entry Placeholder="First Name" Text="{Binding Me.F_Name}" />
+            <Entry Placeholder="Last Name" Text="{Binding Me.L_Name}" />
+            <Entry Placeholder="Email" Text="{Binding Me.Email}" />
+            <HorizontalStackLayout>
+                <Button Text="Save" Clicked="Save_Clicked" />
+                <Button Text="Logout" BackgroundColor="{StaticResource Danger}" Clicked="Logout_Clicked" />
+            </HorizontalStackLayout>
+            <Label Text="Delete account available in Admin or via your backend if exposed." FontSize="12" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

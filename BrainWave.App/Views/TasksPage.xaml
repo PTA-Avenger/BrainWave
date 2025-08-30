@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrainWave.Maui.Views.TasksPage"
+             Title="Tasks">
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="16">
+        <!-- Filters -->
+        <HorizontalStackLayout Spacing="8">
+            <Picker Title="Priority" SelectedItem="{Binding PriorityFilter}">
+                <Picker.ItemsSource>
+                    <x:Array Type="x:String">
+                        <x:String></x:String>
+                        <x:String>High</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>Low</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker Title="Status" SelectedItem="{Binding StatusFilter}">
+                <Picker.ItemsSource>
+                    <x:Array Type="x:String">
+                        <x:String></x:String>
+                        <x:String>Pending</x:String>
+                        <x:String>InProgress</x:String>
+                        <x:String>Completed</x:String>
+                        <x:String>Cancelled</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker Title="Sort By" SelectedItem="{Binding SortBy}">
+                <Picker.ItemsSource>
+                    <x:Array Type="x:String">
+                        <x:String>Due_Date</x:String>
+                        <x:String>Priority_Level</x:String>
+                        <x:String>Task_Status</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button Text="Refresh" Grid.Row="0" Clicked="Refresh_Clicked" />
+        </HorizontalStackLayout>
+
+        <!-- List -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Execute">
+                                <SwipeItem Text="Delete" BackgroundColor="Red" Invoked="SwipeItem_Invoked" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Grid Padding="10" ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Title}" FontAttributes="Bold" />
+                                <Label Text="{Binding Description}" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding Due_Date, StringFormat='Due: {0:yyyy-MM-dd HH:mm}'}" />
+                                <HorizontalStackLayout>
+                                    <Label Text="{Binding Priority_Level}" />
+                                    <Label Text="•" />
+                                    <Label Text="{Binding Task_Status}" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                            <Button Text="Edit" Grid.Column="1" CommandParameter="{Binding .}" Clicked="Edit_Clicked" />
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Editor -->
+        <VerticalStackLayout Grid.Row="3" Spacing="6">
+            <Label Text="Task Editor" FontAttributes="Bold" />
+            <Entry Placeholder="Title" Text="{Binding Editing.Title}" />
+            <Editor Placeholder="Description" HeightRequest="100" Text="{Binding Editing.Description}" />
+            <DatePicker Date="{Binding Editing.Due_Date}" />
+            <Picker Title="Priority" SelectedItem="{Binding Editing.Priority_Level}">
+                <Picker.ItemsSource>
+                    <x:Array Type="x:String">
+                        <x:String>High</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>Low</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker Title="Status" SelectedItem="{Binding Editing.Task_Status}">
+                <Picker.ItemsSource>
+                    <x:Array Type="x:String">
+                        <x:String>Pending</x:String>
+                        <x:String>InProgress</x:String>
+                        <x:String>Completed</x:String>
+                        <x:String>Cancelled</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <HorizontalStackLayout>
+                <Button Text="Create" Clicked="Create_Clicked" />
+                <Button Text="Update" Clicked="Update_Clicked" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

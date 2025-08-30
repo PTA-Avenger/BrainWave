@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrainWave.APP.Views.CollaborationPage"
+             Title="Collaboration">
+    <VerticalStackLayout Padding="16">
+        <Label Text="Your Collaborations" FontAttributes="Bold" />
+        <CollectionView ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" CornerRadius="10" Margin="0,6">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" FontAttributes="Bold" />
+                            <Label Text="{Binding Id, StringFormat='ID: {0}'}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Label Text="(Implement join/leave based on additional backend endpoints when available.)" FontSize="12" />
+    </VerticalStackLayout>
+</ContentPage>

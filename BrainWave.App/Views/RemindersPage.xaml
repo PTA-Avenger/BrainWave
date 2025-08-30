@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrainWave.APP.Views.RemindersPage"
+             Title="Reminders">
+    <VerticalStackLayout Padding="16" Spacing="8">
+        <Label Text="New Reminder" FontAttributes="Bold" />
+        <Entry Placeholder="Task Name" Text="{Binding Editing.TaskName}" />
+        <DatePicker Date="{Binding Editing.ReminderDate}" />
+        <TimePicker Time="{Binding Editing.ReminderTime}" />
+        <Button Text="Add" Clicked="Add_Clicked" />
+
+        <Label Text="Your Reminders" FontAttributes="Bold" />
+        <CollectionView ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" CornerRadius="10" Margin="0,6">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding TaskName}" FontAttributes="Bold" />
+                            <Label Text="{Binding ReminderDate, StringFormat='Date: {0:yyyy-MM-dd}'}" />
+                            <Label Text="{Binding ReminderTime, StringFormat='Time: {0:hh\\:mm}'}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
